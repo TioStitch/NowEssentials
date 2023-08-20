@@ -1,0 +1,17 @@
+name: NowEssentials
+version: 1.0
+author: [TioStitch]
+description: Um sistema de comandos/funções essenciais.
+main: com.tiostitch.snowEssentials.NowEssentials
+commands:
+  fly:
+    aliases: [voar]
+    description: Comando de voar.
+  help:
+    description: Comando de ajuda.
+  vanish:
+    aliases: [v, invi]
+    description: Comando de invisibilidade.
+  invsee:
+    aliases: [invver, verinv]
+    description: Comando de ver inventário.
