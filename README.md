@@ -21,11 +21,9 @@ Usando um método de ``Reflections`` foi criado uma forma de
 adicionar ou remover comandos do plugin sem tanto trabalho.
 
 **Código do acionador**
-``
 
-                Class<?> classe = Class.forName("com.tiostitch.essentials.commands.visuais." + comandos);
-                Object instanciaDaClasse = classe.newInstance();
+     Class<?> classe = Class.forName("com.tiostitch.essentials.commands.visuais." + comandos);
+     Object instanciaDaClasse = classe.newInstance();
                 
-                // Registre o comando e defina o executor com a instância da classe
-                Bukkit.getPluginCommand(comandos).setExecutor((CommandExecutor) instanciaDaClasse);
-``
+     // Registre o comando e defina o executor com a instância da classe
+     Bukkit.getPluginCommand(comandos).setExecutor((CommandExecutor) instanciaDaClasse);
