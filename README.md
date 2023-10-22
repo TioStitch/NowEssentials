@@ -17,5 +17,23 @@ está em sua composição que permite que você customize os comandos do plugin 
  - ...Outros olhe o Wiki
 
 **Ativadores de Comando**
-`Usando um método de ``Reflections`` foi criado uma forma de
-adicionar ou remover comandos do plugin sem tanto trabalho.`
+Usando um método de ``Reflections`` foi criado uma forma de
+adicionar ou remover comandos do plugin sem tanto trabalho.
+
+**Código do acionador**
+``
+        for (String comandos : CMDManager.commands) {
+            try {
+                // Obtém a classe com base no nome
+                Class<?> classe = Class.forName("com.tiostitch.essentials.commands.visuais." + comandos); // Substitua o caminho do pacote
+
+                // Crie uma instância da classe
+                Object instanciaDaClasse = classe.newInstance();
+
+                // Registre o comando e defina o executor com a instância da classe
+                Bukkit.getPluginCommand(comandos).setExecutor((CommandExecutor) instanciaDaClasse);
+            } catch (ClassNotFoundException | IllegalAccessException | InstantiationException e) {
+                e.printStackTrace();
+            }
+        }
+``
