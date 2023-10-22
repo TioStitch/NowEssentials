@@ -1,0 +1,31 @@
+settings:
+
+ #Desative comandos específicos
+ #em todo o seu servidor.
+  comandos-ativos:
+    - Fly:true
+    - EnderChest:true
+    - Vanish:true
+
+#Messages: Estas são as mensagens executadas
+#pelos comandos do NowEssentials.
+messages:
+  prefixo: "§b[NowEssentials]"
+
+  fly-no-permission: "%prefixo% §cVocê não tem permissão para usar isto!"
+  fly-incorrect-usage: "%prefixo% §eUso correto: /enderchest <nick>"
+  fly-active: "%prefixo% §aVocê ativou o seu voo!"
+  fly-desactive: "%prefixo% §cVocê desativou o seu voo!"
+  fly-permission: "nowessentials.fly"
+
+  vanish-no-permission: "%prefixo% §cVocê não tem permissão para usar isto!"
+  vanish-incorrect-usage: "%prefixo% §eUso correto: /invisible"
+  vanish-active: "%prefixo% §aVocê está invisivel!"
+  vanish-desactive: "%prefixo% §cVocê está visivel!"
+  vanish-permission: "nowessentials.vanish"
+
+  enderchest-no-permission: "%prefixo% §cVocê não tem permissão para usar isto!"
+  enderchest-incorrect-usage: "%prefixo% §eUso correto: /enderchest <nick>"
+  enderchest-active: "%prefixo% §aVocê abriu seu enderchest!"
+  enderchest-desactive: "%prefixo% §cVocê abriu um enderchest!"
+  enderchest-permission: "nowessentials.enderchest"
