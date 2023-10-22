@@ -15,3 +15,7 @@ está em sua composição que permite que você customize os comandos do plugin 
  - VanishToggleEvent
  - VanishUntoggleEvent
  - ...Outros olhe o Wiki
+
+**Ativadores de Comando**
+`Usando um método de ``Reflections`` foi criado uma forma de
+adicionar ou remover comandos do plugin sem tanto trabalho.`
